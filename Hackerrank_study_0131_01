@@ -1,0 +1,295 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Algorithms - Warmup"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 1. Solve Me First"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "3\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "def solveMeFirst(a,b):\n",
+    "    return a+b\n",
+    "\n",
+    "num1 = int(input())\n",
+    "num2 = int(input())\n",
+    "res = solveMeFirst(num1,num2)\n",
+    "print(res)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 2. Simple Array Sum"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n",
+      "1 2 3 4 10 11\n",
+      "31\n"
+     ]
+    }
+   ],
+   "source": [
+    "import sys\n",
+    "\n",
+    "def simpleArraySum(n, ar):\n",
+    "    return sum(ar)\n",
+    "\n",
+    "n = int(input().strip())\n",
+    "ar = list(map(int, input().strip().split(' ')))\n",
+    "result = simpleArraySum(n, ar)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n",
+      "1 2 3 4 10 11\n",
+      "31\n"
+     ]
+    }
+   ],
+   "source": [
+    "number_of_elements = int(input())\n",
+    "array = map(int, input().split())\n",
+    "print (sum(array))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 3. Compare the Triplets"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "tripletA = (a0,a1,a2), tripletB = (b0,b1,b2)\n",
+    "ai > bi : Alice earn 1 point\n",
+    "ai < bi : Bob earn 1 point\n",
+    "ai = bi : No points \n",
+    "\n",
+    "Input Format\n",
+    "\n",
+    "The first line contains  space-separated integers, a0, a1, and a3, describing the respective values in triplet . \n",
+    "The second line contains  space-separated integers, b0, b1, and b3, describing the respective values in triplet .\n",
+    "\n",
+    "Constraints\n",
+    "a , b 둘다 1이상 100이하\n",
+    "\n",
+    "Output Format\n",
+    "\n",
+    "Print two space-separated integers denoting the respective comparison points earned by Alice and Bob.\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5 6 7\n",
+      "3 6 10\n",
+      "1 1\n"
+     ]
+    }
+   ],
+   "source": [
+    "import sys\n",
+    "\n",
+    "def solve(a, b):\n",
+    "    A = B = 0\n",
+    "    for i in range(3):\n",
+    "        if a[i] > b[i]:\n",
+    "            A += 1\n",
+    "        elif a[i] < b[i]:\n",
+    "            B += 1\n",
+    "        else:\n",
+    "            A += 0\n",
+    "            B += 0\n",
+    "    result = [A, B]\n",
+    "    return result\n",
+    "\n",
+    "a0, a1, a2 = input().strip().split(' ')\n",
+    "a = [int(a0), int(a1), int(a2)]\n",
+    "b0, b1, b2 = input().strip().split(' ')\n",
+    "b = [int(b0), int(b1), int(b2)]\n",
+    "result = solve(a, b)\n",
+    "print (\" \".join(map(str, result)))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 4. A Very Big Sum"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n",
+      "1000000001 1000000002 1000000003 1000000004 1000000005\n",
+      "5000000015\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input().strip())\n",
+    "ar = list(map(int, input().strip().split(\" \")))\n",
+    "print(sum(ar))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 5. Diagonal Difference   : a_t 자체가 a 를 행렬로 출력해주는 식임. -> a[i][i] 입력 가능함"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n",
+      "11 2 4\n",
+      "4 5 6\n",
+      "10 8 -12\n",
+      "15\n"
+     ]
+    }
+   ],
+   "source": [
+    "import sys\n",
+    "\n",
+    "def diagonalDifference(a):\n",
+    "    # Complete this function\n",
+    "    \n",
+    "    diag_left = 0\n",
+    "    diag_right = 0\n",
+    "    \n",
+    "    for i in range(len(a)):\n",
+    "        j = (len(a)-1)-i\n",
+    "        diag_left += a[i][i]\n",
+    "        diag_right += a[i][j]\n",
+    "        \n",
+    "    return abs(diag_left - diag_right)\n",
+    "\n",
+    "\n",
+    "if __name__ == \"__main__\":\n",
+    "    n = int(input().strip())\n",
+    "    a = []\n",
+    "    for a_i in range(n):\n",
+    "       a_t = [int(a_temp) for a_temp in input().strip().split(' ')]\n",
+    "       a.append(a_t)\n",
+    "    result = diagonalDifference(a)\n",
+    "    print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
