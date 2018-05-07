@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# ### Coding Study_0329
+# Coding Study_0329
 # Hackerrank> algorithm> Implements (5문제)
 # 
 # - Find Digits : O.K
@@ -10,14 +10,8 @@
 # - Sherlock and Squares : O.K
 # - Library Fine : O.K
 
-# In[ ]:
 
-
-### Find Digits
-
-
-# In[25]:
-
+# Find Digits
 
 #!/bin/python3
 
@@ -48,14 +42,7 @@ if __name__ == "__main__":
         print(result)
 
 
-# In[ ]:
-
-
-### Extra Long Factorials
-
-
-# In[36]:
-
+# Extra Long Factorials
 
 #!/bin/python3
 
@@ -74,14 +61,7 @@ if __name__ == "__main__":
     print(extraLongFactorials(n))
 
 
-# In[ ]:
-
-
-### Append and Delete
-
-
-# In[76]:
-
+# Append and Delete
 
 #!/bin/python3
 
@@ -118,22 +98,7 @@ if __name__ == "__main__":
     print(result)
 
 
-# In[ ]:
-
-
-uoiauwrebgiwrhgiuawheirhwebvjforidkslweufgrhvjqasw
-vgftrheydkoslwezxcvdsqjkfhrydjwvogfheksockelsnbkeq
-100
-
-
-# In[ ]:
-
-
-### Sherlock and Squares
-
-
-# In[66]:
-
+# Sherlock and Squares
 
 #!/bin/python3
 
@@ -159,14 +124,7 @@ if __name__ == "__main__":
         print(result)
 
 
-# In[ ]:
-
-
-### Library Fine
-
-
-# In[75]:
-
+# Library Fine
 
 #!/bin/python3
 

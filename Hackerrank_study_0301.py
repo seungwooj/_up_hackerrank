@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# ### Coding Study_0301
+# Coding Study_0301
 # 
 # Hackerrank> algorithm> Implements (5문제)
 # - Climbing the Leaderboard (SOLVED - timeout)
@@ -12,14 +12,7 @@
 # + Forming a Magic Square
 # 
 
-# In[ ]:
-
-
-### Climbing the Leaderboard
-
-
-# In[36]:
-
+# Climbing the Leaderboard
 
 def climbingLeaderboard(scores, alice):
     # Complete this function
@@ -44,9 +37,6 @@ if __name__ == "__main__":
     print ("\n".join(map(str, result)))
 
 
-# In[40]:
-
-
 n = int(input().strip())
 scores = list(map(int, input().strip().split(' ')))
 m = int(input().strip())
@@ -64,14 +54,7 @@ print ("\n".join(map(str, alice_rank)))
     
 
 
-# In[ ]:
-
-
-### The Hurdle Race
-
-
-# In[3]:
-
+# The Hurdle Race
 
 import sys
 
@@ -91,15 +74,7 @@ if __name__ == "__main__":
     result = hurdleRace(k, height)
     print(result)
 
-
-# In[ ]:
-
-
-### Designer PDF Viewer
-
-
-# In[32]:
-
+# Designer PDF Viewer
 
 h = list(map(int, input().strip().split(' ')))  #숫자 26개 리스트로 변경
 word = list(input().strip())                    #알파벳들 리스트로 변경
@@ -114,15 +89,7 @@ for i in range(len(word)):
     
 print(max(result))                                    #넓이의 최대값
 
-
-# In[ ]:
-
-
-### Utopian Tree
-
-
-# In[43]:
-
+# Utopian Tree
 
 t = int(input().strip())
 for a0 in range(t):
@@ -134,21 +101,12 @@ for a0 in range(t):
         print (int((2**((n + 2) / 2) - 1) / (2 - 1)))   ##초항이 1, 2씩 곱하는 등비수열의 합
 
 
-# In[45]:
-
-
 a = [-1, -1, 2, 3, -1]
 a.count(>0)
 
 
-# In[ ]:
 
-
-### Angry Professor
-
-
-# In[1]:
-
+# Angry Professor
 
 import sys
 

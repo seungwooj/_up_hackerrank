@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# ### Coding Study_0221
+# Coding Study_0221
 # 
 # Hackerrank> algorithm> Implements (7문제)
 # - Sock Merchant
@@ -12,10 +12,7 @@
 # - Forming a Magic Square
 # - Picking Numbers
 
-# In[1]:
-
-
-### Sock Merchant
+# Sock Merchant
 
 def sockMerchant(n, ar):
     result = 0
@@ -32,11 +29,7 @@ ar = list(map(int, input().strip().split(' ')))
 result = sockMerchant(n, ar)
 print(result)
 
-
-# In[2]:
-
-
-### Drawing books
+# Drawing books
 
 def solve(n, p):
     
@@ -57,10 +50,6 @@ result = solve(n, p)
 print(result)
 
 
-# In[3]:
-
-
-
 n = int(input().strip())
 s = input().strip()
 
@@ -76,10 +65,8 @@ for i in range(n):
 print(change)
 
 
-# In[4]:
 
-
-### Counting Valleys
+# Counting Valleys
 
 def countingValleys(n, s):
     h = 0
@@ -107,11 +94,7 @@ if __name__ == "__main__":
     result = countingValleys(n, s)
     print(result)
 
-
-# In[4]:
-
-
-### Electronics Shop
+# Electronics Shop
 
 s,n,m = input().strip().split(' ')
 s,n,m = [int(s),int(n),int(m)]
@@ -135,11 +118,7 @@ for k in list_1 :
 
 print(max(list_2))
 
-
-# In[1]:
-
-
-### Cats and a Mouse
+# Cats and a Mouse
 
 q = int(input().strip())
 for a0 in range(q):
@@ -153,11 +132,7 @@ for a0 in range(q):
     else:
         print("Mouse C")
 
-
-# In[ ]:
-
-
-### Forming a Magic Square  <- 실패
+# Forming a Magic Square  <- 실패
 
 s = []
 for s_i in range(3):
@@ -171,11 +146,8 @@ for i in range(3):
     for j in range(3):
         print 
 
+# Picking Numbers
 
-# In[18]:
-
-
-### Picking Numbers
 import sys
 
 def pickingNumbers(a):

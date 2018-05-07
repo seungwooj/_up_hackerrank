@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# ### Coding Study_0308
+#  Coding Study_0308
 # Hackerrank> algorithm> Implements (6문제)
 # 
 # - Beautiful Days at the Movies : O.K
@@ -11,20 +11,8 @@
 # - Sequence Equation : O.K
 # - Jumping on th Clouds: Revisited : O.K
 
-# In[ ]:
 
-
-14:30PM
-
-
-# In[ ]:
-
-
-### Beautiful Days at the Movies
-
-
-# In[1]:
-
+# Beautiful Days at the Movies
 
 #!/bin/python3
 
@@ -46,21 +34,7 @@ if __name__ == "__main__":
     result = beautifulDays(i, j, k)
     print(result)
 
-
-# In[ ]:
-
-
-### Viral Advertising
-
-
-# In[ ]:
-
-
-### Save the Prisoner!
-
-
-# In[2]:
-
+# Save the Prisoner!
 
 #!/bin/python3
 
@@ -87,15 +61,7 @@ for a0 in range(t):
     result = saveThePrisoner(n, m, s)
     print(result)
 
-
-# In[ ]:
-
-
-### Circular Array Rotation
-
-
-# In[3]:
-
+# Circular Array Rotation
 
 if __name__ == "__main__":
     n, k, q = input().strip().split(' ')
@@ -113,15 +79,7 @@ a = a[n-(k%n):] + a[0:n-(k%n)]
 for i in m:
     print (a[i])
 
-
-# In[ ]:
-
-
-### Sequence Equation  -> 설명할 수 있도록 준비
-
-
-# In[9]:
-
+# Sequence Equation  -> 설명할 수 있도록 준비
 
 n = int(input().strip())
 p = list(map(int, input().strip().split(' ')))
@@ -129,15 +87,7 @@ p = list(map(int, input().strip().split(' ')))
 for i in range(n):
     print (p.index(p.index(i+1) + 1) + 1)
 
-
-# In[ ]:
-
-
-### Jumping on the Clouds: Revisited   <- 전제조건 : n % k = 0
-
-
-# In[14]:
-
+# Jumping on the Clouds: Revisited   <- 전제조건 : n % k = 0
 
 n, k  = map(int, input().strip().split())
 clouds = list(map(int, input().strip().split()))
